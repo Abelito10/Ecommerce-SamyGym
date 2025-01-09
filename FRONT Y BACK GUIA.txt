@@ -1,0 +1,92 @@
+
+BACKEND
+# Inicializar un nuevo proyecto Node.js
+npm init 
+
+#instalamos el framework express
+npm i express 
+
+#babel es un compilador de javascript
+npm install -D @babel/cli @babel/core
+@babel/preset-env @babel/node
+
+#dependecia para q guarde automaticamente los cambios
+npm i nodemon
+
+#para utilizar el motor mongodb
+npm i mongoose
+
+#para la autenticación
+npm i jsonwebtoken
+
+#para encryptar y desincrptar contraseñas
+npm i bcryptjs
+
+#para leer el cuerpo de la solicitud
+npm i body-parse
+
+#cors son los recursos de origen cruzado
+para q no cualquiera pueda accedar a la información del api
+npm i cors
+
+#para almacenamiento de archivos, ejm las imagenes de los diferentes productos
+npm i connect-multiparty
+
+#para manejar las rutas en express
+npm i express-promise-router
+
+
+#para inicializar el proyecto
+npm run dev
+
+npm install
+
+FRONTEND
+#Creamos la carpeta donde se va crear el frontend en nuestro caso CrudAngularNodeJs
+#abres la carpeta CrudAngularNodeJs con powershell o cmd
+#escribimos el comando ng new frontend(nombre de la carpeta)
+#luego cd frontend
+#inicializamos con visual estudio code, con el comando code .
+# para ejecutar el proyecto ng serve --o
+
+asegurate importandole 
+
+import { HttpClientModule } from '@angular/common/http'; // Asegúrate de importarlo
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule  // Asegúrate de agregarlo aquí
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+
+#Crear los componentes necesarios
+ng generate component mantenimiento
+ng generate component equipos-tecnico
+ng generate component equipos-propietario
+ng generate component equipos-servicio
+
+#Crear los servicios
+ng generate service mantenimiento
+
+para reparar el error
+  import { FormsModule } from '@angular/forms';  // Asegúrate de importar FormsModule
+
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,  // Asegúrate de agregar FormsModule aquí
+    HttpClientModule
+  ],
+
+
+
+
+
