@@ -34,7 +34,8 @@ npm i connect-multiparty
 
 #para manejar las rutas en express
 npm i express-promise-router
-
+# para ejecutar el proyecto 
+ng serve --o
 
 #para inicializar el proyecto
 npm run dev
@@ -42,6 +43,10 @@ npm run dev
 npm install
 
 FRONTEND
+#crear el proyecto en angular
+nd new ecommerce
+
+
 #Creamos la carpeta donde se va crear el frontend en nuestro caso CrudAngularNodeJs
 #abres la carpeta CrudAngularNodeJs con powershell o cmd
 #escribimos el comando ng new frontend(nombre de la carpeta)
